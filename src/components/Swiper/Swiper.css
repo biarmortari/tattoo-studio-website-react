@@ -1,0 +1,21 @@
+.swiper-slide {
+  aspect-ratio: 3/4;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.swiper-slide img {
+  aspect-ratio: 3/4;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  filter: grayscale(0%);
+}
