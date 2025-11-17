@@ -1,14 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import "./Swiper.css";
+
 import "swiper/css";
 import "swiper/css/pagination";
+import "./Swiper.css";
 
 export default function SwiperComponent({ images }) {
   return (
     <Swiper
-      className="swiper-slide"
-      modules={[Autoplay, Pagination]}
+      className="my-swiper"
+      modules={[Autoplay]}
       loop={true}
       speed={2000}
       autoplay={{

@@ -51,14 +51,14 @@ export const catalogData = [
   },
   {
     category: "neo-tribal",
-    image: "/images/catalog/catalog8.jpg",
+    image: "/images/catalog/catalog8.jpeg",
     title: "BACKPIECE",
     size: null,
     price: "Valor cobrado por sessão",
   },
   {
     category: "neo-tribal",
-    image: "/images/catalog/catalog9.jpg",
+    image: "/images/catalog/catalog9.jpeg",
     title: "BACKPIECE",
     size: null,
     price: "Valor cobrado por sessão",
