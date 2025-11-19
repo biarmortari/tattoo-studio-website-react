@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 480px) {
   .modal-content {
-    margin-left: 1rem;
+    margin-left: 0;
     max-width: 90%;
     padding: 16px;
   }
