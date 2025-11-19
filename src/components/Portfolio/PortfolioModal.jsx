@@ -3,7 +3,7 @@ export default function PortfolioModal({ data }) {
 
   return (
     <div>
-      <img src={data.img} alt={data.title} />
+      <img src={data.src} alt={data.title} />
     </div>
   );
 }
