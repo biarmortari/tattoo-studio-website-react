@@ -8,6 +8,7 @@ export const catalogData = [
     price: "R$ 800,00",
   },
   {
+    id: 2,
     category: "mini-realismo",
     image: "/images/catalog/catalog2.jpg",
     title: "REAL EYES",
@@ -15,6 +16,7 @@ export const catalogData = [
     price: "R$ 850,00",
   },
   {
+    id: 3,
     category: "mini-realismo",
     image: "/images/catalog/catalog3.jpg",
     title: "THE PIECES",
@@ -22,6 +24,7 @@ export const catalogData = [
     price: "R$ 750,00",
   },
   {
+    id: 4,
     category: "mini-realismo",
     image: "/images/catalog/catalog4.jpg",
     title: "EXPLORER",
@@ -29,6 +32,7 @@ export const catalogData = [
     price: "R$ 800,00",
   },
   {
+    id: 5,
     category: "mini-realismo",
     image: "/images/catalog/catalog5.jpg",
     title: "FLIGHT OF FREEDOM",
@@ -36,6 +40,7 @@ export const catalogData = [
     price: "R$ 850,00",
   },
   {
+    id: 6,
     category: "mini-realismo",
     image: "/images/catalog/catalog6.jpg",
     title: "SMOKE MAN",
@@ -43,6 +48,7 @@ export const catalogData = [
     price: "R$ 850,00",
   },
   {
+    id: 7,
     category: "mini-realismo",
     image: "/images/catalog/catalog7.jpg",
     title: "HEART SOUND",
@@ -50,6 +56,7 @@ export const catalogData = [
     price: "R$ 800,00",
   },
   {
+    id: 8,
     category: "neo-tribal",
     image: "/images/catalog/catalog8.jpeg",
     title: "BACKPIECE",
@@ -57,6 +64,7 @@ export const catalogData = [
     price: "Valor cobrado por sessão",
   },
   {
+    id: 9,
     category: "neo-tribal",
     image: "/images/catalog/catalog9.jpeg",
     title: "BACKPIECE",

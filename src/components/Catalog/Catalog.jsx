@@ -1,12 +1,14 @@
 import { catalogData } from "../../data/catalogData";
 import { useState } from "react";
 import "./Catalog.css";
+import useModal from "../../hooks/useModal";
+import Modal from "../Modal/Modal";
+import CatalogModal from "./CatalogModal";
 
 export default function Catalog() {
-  const [selectedCategory, setSelectedCategory] = useState(
-    "mini-realismo",
-    "neo-tribal"
-  );
+  const [selectedCategory, setSelectedCategory] = useState("mini-realismo");
+
+  const { isOpen, data, openModal, closeModal } = useModal();
 
   const filtered = catalogData.filter(
     (item) => item.category === selectedCategory
@@ -35,7 +37,11 @@ export default function Catalog() {
       <p className="catalog__subtitle">? QUAL O SEU PONTO DE VISTA ?</p>
       <div className="gallery">
         {filtered.map((item) => (
-          <div key={item.id} className={`gallery__item ${item.category}`}>
+          <div
+            key={item.id}
+            className={`gallery__item ${item.category}`}
+            onClick={() => openModal(item)}
+          >
             <div className="image-container">
               <img className="item__image" src={item.image} alt={item.title} />
             </div>
@@ -47,6 +53,9 @@ export default function Catalog() {
           </div>
         ))}
       </div>
+      <Modal isOpen={isOpen} onClose={closeModal}>
+        <CatalogModal data={data} />
+      </Modal>
     </section>
   );
 }
